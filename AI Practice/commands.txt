@@ -1,0 +1,6 @@
+create venv: "py -m venv venv"
+Unrestricted if activation is restricted: "Set-ExecutionPolicy Unrestricted -Scope Process"
+activate venv: "venv/Scripts/activate"
+activate restrictions: "Set-ExecutionPolicy Default -Scope Process"
+install from requirement.txt: "pip install -r requirement.txt"
+run command: "uvicorn api:app --reload"
